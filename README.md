@@ -1,7 +1,6 @@
 # BBox Scraping
 
 This project allows to crawl <https://forum.bouyguestelecom.fr>.
-
 ## Export format
 
 Every message found (which can be either a question or an anwser) is exported following, at least, these columns:
