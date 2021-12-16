@@ -126,6 +126,17 @@ in this case we should have a yesterday csv file to compare the already existing
 
    
   ```
+  **NOTE :** in option 2 you need to have an existing csv file to filter the scrapped questions/answers
+  
+  ```python
+         #for the Full version : 
+               with open('Forum BT '+str(yesterday)+'F.csv', 'rt',encoding='utf8') as f:     
+         #for the Delta version : 
+               with open('Forum BT '+str(yesterday)+'D.csv', 'rt',encoding='utf8') as f:
+         #if the csv file is in another directory than the code you can specify the path to it : 
+               with open('/Path/TO/FILE/Forum BT '+str(yesterday)+'D.csv', 'rt',encoding='utf8') as f:
+  ```
+         
   ## 4-get_question :
   getting all questions from the links we stored in forum_links list and returning a structured dictionary: 
   ```python
